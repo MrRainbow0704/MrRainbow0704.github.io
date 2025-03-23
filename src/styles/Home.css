@@ -1,7 +1,6 @@
 main {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 
 	> div {
 		width: 50%;
@@ -45,7 +44,7 @@ main {
 }
 
 .socials {
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 }
 
 .icon-link {
