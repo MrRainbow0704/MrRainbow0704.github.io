@@ -8,14 +8,12 @@ import NotFound from "@/pages/NotFound";
 import "@/styles/App.css";
 
 export default function App() {
-	window.onload = () => {
-		const toggle = document.getElementById("darkmode");
-		if (localStorage.getItem("dark") === "true") {
-			toggle!.textContent = "light_mode";
-		} else {
-			toggle!.textContent = "mode_night";
-		}
-	};
+	window.addEventListener("load", () => {
+		document.getElementById("darkmode")!.textContent =
+			localStorage.getItem("dark") === "true"
+				? "light_mode"
+				: "mode_night";
+	});
 	return (
 		<BrowserRouter>
 			<Header />
