@@ -1,0 +1,5 @@
+.badgeLink {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 2px;
+}
