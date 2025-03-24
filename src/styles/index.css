@@ -4,6 +4,11 @@
   --text-nm: 1rem;
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
+  --space-xs: 0.1rem;
+  --space-sm: 0.25rem;
+  --space-nm: 0.5rem;
+  --space-lg: 0.75rem;
+  --space-xl: 1rem;
 
 	--text-primary: oklch(0.145 0 0);
 	--text-secondary: oklch(0.205 0 0);

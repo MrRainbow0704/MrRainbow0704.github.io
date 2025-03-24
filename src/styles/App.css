@@ -1,5 +1,5 @@
 #root {
-	min-height: 100vh;
+	min-height: 100svh;
 	display: grid;
 	grid-template-rows: auto auto 1fr auto;
 	background-color: var(--background-primary);
@@ -16,7 +16,7 @@ a:hover {
 
 body {
 	font-family: "Roboto", sans-serif;
-	min-height: 100vh;
+	min-height: 100%;
 }
 
 header {
@@ -30,7 +30,8 @@ header {
 nav {
 	background-color: var(--background-secondary);
 	position: relative;
-	padding-bottom: 0.5rem;
+	padding-bottom: var(--space-nm);
+
 	> button {
 		position: absolute;
 		color: var(--text-primary);
@@ -45,7 +46,7 @@ nav {
 		padding: 0;
 		> li {
 			display: inline;
-			padding: 0 1rem;
+			padding: 0 var(--space-nm);
 		}
 	}
 }
