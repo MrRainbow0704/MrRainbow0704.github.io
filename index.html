@@ -7,7 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
   <title>Vite + React + TS</title>
   <script>
-    if (localStorage.getItem("dark") === "true") {
+    var isDarkMode = localStorage.getItem("dark")
+    if (isDarkMode === null) {
+      isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "true" : "false"
+      localStorage.setItem("dark", isDarkMode)
+    } 
+    if (isDarkMode == "true") {
       const root = document.documentElement;
       root.classList.add("dark");
     }
