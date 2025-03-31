@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import SocialIcon from "@/components/SocialIcon";
 import Badge from "@/components/Badge";
 import Project from "@/components/Project";
@@ -11,17 +12,15 @@ import twitter from "@/assets/x.svg";
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
+	const { t } = useTranslation("common");
+
 	return (
 		<main>
 			<div className={styles.intro}>
 				<div className={styles.aboutMe}>
 					<div className={styles.description}>
 						<img src={me} alt="myself" />
-						<p>
-							Sono uno sviluppatore, appassionato di tecnologia e
-							informatica ma anche di cucina e videogiochi. Suono
-							il pianoforte e pratico karate a livello agonistico.
-						</p>
+						<p>{t("home.desc")}</p>
 					</div>
 					<div className={styles.socials}>
 						<SocialIcon
@@ -57,7 +56,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className={styles.technologies}>
-					<h2>Le tecnologie che conosco</h2>
+					<h2>{t("home.tech-stack")}</h2>
 					<div className={styles.badges}>
 						<Badge
 							url="https://go.dev/"
@@ -160,40 +159,42 @@ export default function Home() {
 							alt="Docker"
 						/>
 					</div>
-					<h2>Dove ho studiato</h2>
+					<h2>{t("home.study")}</h2>
 					<ul>
 						<li>
-							Sto frequentando il corso di{" "}
+							{t("home.study.uni-1")}{" "}
 							<a
 								href="https://corsi.unibo.it/laurea/IngegneriaScienzeInformatiche"
 								target="_blank">
-								Ingegneria e Scienze Informatiche
+								{t("home.study.uni-2")}
 							</a>{" "}
-							dell'università di Bologna.
+							{t("home.study.uni-3")}
 						</li>
 						<li>
-							Mi sono diplomato nel 2025 al{" "}
+							{t("home.study.lic-1")}{" "}
 							<a
 								href="https://www.liceocalboli.edu.it/"
 								target="_blank">
-								Liceo Scientifico Fulcieri
+								{t("home.study.lic-2")}
 							</a>{" "}
-							di Forlì.
+							{t("home.study.lic-3")}
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div className={styles.projects}>
-				<h2>I Miei Progetti</h2>
+				<h2>{t("home.projects")}</h2>
 				<div className={styles.cards}>
 					<Project
 						title="AnimesaturnDownloader"
-						description="Una utility che permette di scaricare anime dal famoso sito Animesaturn e salvarli in formato .mp4 sul proprio computer."
+						description={t("home.projects.animesaturnDownloaderGo")}
 						url="https://github.com/MrRainbow0704/animesaturnDownloaderGo"
 					/>
 					<Project
 						title="Matrimonio Roberta e Antonio"
-						description="Il sito creato ad hoc per il matrimonio dei miei genitori"
+						description={t(
+							"home.projects.Matrimonio-roberta-antonio"
+						)}
 						url="https://github.com/MrRainbow0704/Matrimonio-roberta-antonio"
 					/>
 				</div>

@@ -15,7 +15,7 @@ a:hover {
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Twemoji Country Flags", "Roboto", sans-serif;
 	min-height: 100%;
 }
 
@@ -32,13 +32,12 @@ nav {
 	position: relative;
 	padding-bottom: var(--space-nm);
 
-	> button {
+	> .buttons {
 		position: absolute;
-		color: var(--text-primary);
-		background-color: transparent;
-		border: none;
 		top: 0;
 		right: 0;
+		display: flex;
+		flex-direction: row;
 	}
 	> ul {
 		list-style-type: none;

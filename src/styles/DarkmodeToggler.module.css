@@ -1,0 +1,10 @@
+#darkModeTogglerButton {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	width: 2rem;
+	height: 2rem;
+}
+#darkModeToggler {
+	color: var(--text-primary);
+}

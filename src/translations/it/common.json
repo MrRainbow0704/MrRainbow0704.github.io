@@ -1,0 +1,19 @@
+{
+  "navbar.link.home": "Home",
+  "navbar.link.contacts": "Contattami",
+  "language-selector.label": "Cambia lingua",
+  "404-page.title": "Errore 404, pagina non trovata",
+  "404-page.desc": "Non esiste una pagina a",
+  "home.desc": "Sono uno sviluppatore, appassionato di tecnologia e informatica ma anche di cucina e videogiochi. Suono il pianoforte e pratico karate a livello agonistico.",
+  "home.tech-stack": "Le tecnologie che conosco",
+  "home.study": "Dove ho studiato",
+  "home.study.uni-1": "Sto frequentando il corso di",
+  "home.study.uni-2": "Ingegneria e Scienze Informatiche",
+  "home.study.uni-3": "dell'Università di Bologna.",
+  "home.study.lic-1": "Mi sono diplomato nel 2025 al",
+  "home.study.lic-2": "Liceo Scientifico Fulcieri (opzione scienze applicate)",
+  "home.study.lic-3": "di Forlì.",
+  "home.projects": "I Miei Progetti",
+  "home.projects.animesaturnDownloaderGo": "Una utility che permette di scaricare anime dal famoso sito Animesaturn e salvarli in formato .mp4 sul proprio computer.",
+  "home.projects.Matrimonio-roberta-antonio": "Il sito creato ad hoc per il matrimonio dei miei genitori."
+}

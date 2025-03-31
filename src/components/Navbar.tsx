@@ -1,34 +1,25 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import DarkmodeToggler from "@/components/DarkmodeToggler";
+import LanguageSelector from "@/components/LanguageSelector";
 
 export default function Navbar() {
-	const toggleDarkmode = () => {
-		const root = document.documentElement;
-		const toggle = document.getElementById("darkmode");
-		if (localStorage.getItem("dark") === "true") {
-			localStorage.setItem("dark", "false");
-			toggle!.innerText = "mode_night";
-		} else {
-			localStorage.setItem("dark", "true");
-			toggle!.innerText = "light_mode";
-		}
-		root!.classList.toggle("dark");
-	};
+	const { t } = useTranslation("common");
 
 	return (
 		<nav>
 			<ul>
 				<li>
-					<Link to="/">Home</Link>
+					<Link to="/">{t("navbar.link.home")}</Link>
 				</li>
 				<li>
-					<Link to="/contact-me">Contattami</Link>
+					<Link to="/contact-me">{t("navbar.link.contacts")}</Link>
 				</li>
 			</ul>
-			<button onClick={toggleDarkmode}>
-				<span
-					id="darkmode"
-					className="material-icons"></span>
-			</button>
+			<span className="buttons">
+				<DarkmodeToggler />
+				<LanguageSelector />
+			</span>
 		</nav>
 	);
 }

@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 export default function NotFound() {
+	const {t} = useTranslation("common")
 	return (
-		<>
-			<h1>Errore 404, pagina non trovata</h1>
-			<h2>Non esiste una pagina a {location.href}</h2>
-		</>
+		<main>
+			<h1>{ t("404-page.title")}</h1>
+			<h2>{t("404-page.desc")} {location.href}</h2>
+		</main>
 	);
 }
