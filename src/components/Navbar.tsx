@@ -4,7 +4,7 @@ import DarkmodeToggler from "@/components/DarkmodeToggler";
 import LanguageSelector from "@/components/LanguageSelector";
 
 export default function Navbar() {
-	const { t } = useTranslation("common");
+	const { t } = useTranslation();
 
 	return (
 		<nav>

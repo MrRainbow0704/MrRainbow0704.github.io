@@ -12,7 +12,7 @@ import twitter from "@/assets/x.svg";
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
-	const { t } = useTranslation("common");
+	const { t } = useTranslation();
 
 	return (
 		<main>

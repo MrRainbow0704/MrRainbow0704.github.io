@@ -5,12 +5,12 @@ import styles from "@/styles/LanguageSelector.module.css";
 
 export default function LanguageSelector() {
 	polyfillCountryFlagEmojis();
-	const [t, i18n] = useTranslation("common");
+	const [t, i18n] = useTranslation();
 
 	useEffect(() => {
 		document.documentElement.lang = i18n.language;
 	});
-	
+
 	const toggleDropdown = () => {
 		const h = document.getElementById(
 			styles.languageSelectorDropdown

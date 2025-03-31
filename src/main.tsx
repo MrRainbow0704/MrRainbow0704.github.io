@@ -6,8 +6,8 @@ import i18next from "i18next";
 import App from "@/components/App";
 import "@/styles/reset.css";
 import "@/styles/index.css";
-import common_it from "@/translations/it/common.json";
-import common_en from "@/translations/en/common.json";
+import common_it from "@/translations/it/translation.json";
+import common_en from "@/translations/en/translation.json";
 
 i18next.use(LanguageDetector).init({
 	interpolation: { escapeValue: false },
@@ -19,10 +19,10 @@ i18next.use(LanguageDetector).init({
 	fallbackLng: "en",
 	resources: {
 		en: {
-			common: common_en,
+			translation: common_en,
 		},
 		it: {
-			common: common_it,
+			translation: common_it,
 		},
 	},
 });
