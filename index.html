@@ -12,9 +12,10 @@
       isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "true" : "false"
       localStorage.setItem("dark", isDarkMode)
     }
-    if (isDarkMode == "true") {
-      const root = document.documentElement;
-      root.classList.add("dark");
+    if (isDarkMode === "true") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
     }
   </script>
 </head>

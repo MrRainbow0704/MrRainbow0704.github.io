@@ -1,27 +1,50 @@
 import { useEffect } from "react";
 import styles from "@/styles/DarkmodeToggler.module.css";
 
+function toggleDarkmode(old: string) {
+	if (old === "true") {
+		document.documentElement!.classList.remove("dark");
+		document.getElementById(styles.darkModeToggler)!.innerText =
+			"mode_night";
+		localStorage.setItem("dark", "false");
+	} else {
+		document.documentElement!.classList.add("dark");
+		document.getElementById(styles.darkModeToggler)!.innerText =
+			"light_mode";
+		localStorage.setItem("dark", "true");
+	}
+}
+
 export default function DarkmodeToggler() {
 	useEffect(() => {
 		document.getElementById(styles.darkModeToggler)!.textContent =
 			localStorage.getItem("dark") === "true"
 				? "light_mode"
 				: "mode_night";
-	});
-	const toggleDarkmode = () => {
-		const root = document.documentElement;
-		const toggle = document.getElementById(styles.darkModeToggler);
 		if (localStorage.getItem("dark") === "true") {
-			localStorage.setItem("dark", "false");
-			toggle!.innerText = "mode_night";
+			document.documentElement.classList.add("dark");
 		} else {
-			localStorage.setItem("dark", "true");
-			toggle!.innerText = "light_mode";
+			document.documentElement.classList.remove("dark");
 		}
-		root!.classList.toggle("dark");
-	};
+		window
+			.matchMedia("(prefers-color-scheme: dark)")
+			.addEventListener("change", (e) => {
+				toggleDarkmode(`${!e.matches}`);
+			});
+
+		return () => {
+			window
+				.matchMedia("(prefers-color-scheme: dark)")
+				.removeEventListener("change", () => {});
+		};
+	});
+
 	return (
-		<button id={styles.darkModeTogglerButton} onClick={toggleDarkmode}>
+		<button
+			id={styles.darkModeTogglerButton}
+			onClick={() => {
+				toggleDarkmode(localStorage.getItem("dark")!);
+			}}>
 			<span id={styles.darkModeToggler} className="material-icons"></span>
 		</button>
 	);

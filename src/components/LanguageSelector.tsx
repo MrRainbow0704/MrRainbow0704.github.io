@@ -18,7 +18,7 @@ export default function LanguageSelector() {
 		document.getElementById(styles.languageSelectorDropdown)!.hidden = !h;
 	};
 
-	const disableDropdown = () => {
+	const closeDropdown = () => {
 		document.getElementById(styles.languageSelectorDropdown)!.hidden = true;
 	};
 
@@ -30,7 +30,7 @@ export default function LanguageSelector() {
 			<div hidden id={styles.languageSelectorDropdown}>
 				<span className={styles.header}>
 					{t("language-selector.label")}
-					<button onClick={disableDropdown}>&times;</button>
+					<button onClick={closeDropdown}>&times;</button>
 				</span>
 				<div className={styles.languages}>
 					<button
