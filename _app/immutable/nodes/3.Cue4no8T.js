@@ -1,0 +1,2 @@
+import{t as i,a as p}from"../chunks/CF3tOtks.js";import"../chunks/CS8-R0Bj.js";import{z as t,A as l,B as s,C as m}from"../chunks/DOTw-NPe.js";var c=i('<main><p> <a href="mailto:2007.marcosimone@gmail.com">2007.marcosimone@gmail.com</a> <a href="tel:+393755946273">+39 375 594 6273</a></p></main>');function g(r){var a=c(),o=t(a),e=t(o);e.nodeValue="Puoi contattarmi a  ";var n=l(e,2);n.nodeValue=` \r
+        o telefonando al  `,s(),m(o),m(a),p(r,a)}export{g as component};
