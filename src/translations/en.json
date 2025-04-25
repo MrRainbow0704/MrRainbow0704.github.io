@@ -1,9 +1,9 @@
 {
+  "404-page.title": "Error 404, page not found",
+  "404-page.desc": "There is no page at",
   "navbar.link.home": "Home",
   "navbar.link.contacts": "Contact me",
   "language-selector.label": "Change Language",
-  "404-page.title": "Error 404, page not found",
-  "404-page.desc": "There is no page at",
   "home.desc": "I'm a developer, passionate about technology and I.T. but also cooking and videogames. I play the piano and practice karate at an agonistic level.",
   "home.tech-stack": "Technologies I know",
   "home.study": "Where I have studied",

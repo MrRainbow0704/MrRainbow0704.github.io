@@ -1,16 +1,12 @@
-import { defineConfig } from "vite"
-import react from "@vitejs/plugin-react"
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias: {
-      "@": "/src",
-    }
-  },
-  server: {
-    allowedHosts: true
-  },
-  base: "/"
-})
+	plugins: [sveltekit()],
+	resolve: {
+		alias: {
+			"$assets": "./src/assets",
+			"$translations": "./src/translations"
+		}
+	}
+});
