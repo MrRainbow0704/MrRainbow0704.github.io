@@ -21,6 +21,7 @@
     "desc": "I'm a developer, passionate about technology and I.T. but also cooking and videogames. I play the piano and practice karate at an agonistic level.",
     "tech-stack": "Technologies I know",
     "study": {
+      "title": "Where I studied",
       "uni-1": "I'm attending the",
       "uni-2": "Computer Science and Engineering",
       "uni-3": "degree course at Bologna's University.",
@@ -29,6 +30,7 @@
       "lic-3": "of Forlì."
     },
     "projects": {
+      "title": "My projects",
       "animesaturnDownloaderGo": "An utility that allows to download anime from the famous site Animesaturn and save them in .mp4 format on your computer.",
       "Matrimonio-roberta-antonio": "A site created ad hoc for my parents wedding."
     }

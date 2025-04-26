@@ -179,7 +179,7 @@
 					<Badge url={b.url} icon={b.icon} alt={b.alt} />
 				{/each}
 			</div>
-			<h2>{$t("home.study")}</h2>
+			<h2>{$t("home.study.title")}</h2>
 			<ul>
 				<li>
 					{$t("home.study.uni-1")}{" "}
@@ -201,7 +201,7 @@
 		</div>
 	</div>
 	<div class="projects">
-		<h2>{$t("home.projects")}</h2>
+		<h2>{$t("home.projects.title")}</h2>
 		<div class="cards">
 			{#each projects as p}
 				<Project

@@ -21,6 +21,7 @@
     "desc": "Sono uno sviluppatore, appassionato di tecnologia e informatica ma anche di cucina e videogiochi. Suono il pianoforte e pratico karate a livello agonistico.",
     "tech-stack": "Le tecnologie che conosco",
     "study": {
+      "title": "Dove ho studiato",
       "uni-1": "Sto frequentando il corso di",
       "uni-2": "Ingegneria e Scienze Informatiche",
       "uni-3": "dell'Università di Bologna.",
@@ -29,6 +30,7 @@
       "lic-3": "di Forlì."
     },
     "projects": {
+      "title": "I miei progetti",
       "animesaturnDownloaderGo": "Una utility che permette di scaricare anime dal famoso sito Animesaturn e salvarli in formato .mp4 sul proprio computer.",
       "Matrimonio-roberta-antonio": "Il sito creato ad hoc per il matrimonio dei miei genitori."
     }
