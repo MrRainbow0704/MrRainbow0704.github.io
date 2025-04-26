@@ -6,7 +6,7 @@
 {#if page.status == 404}
 	<div>
 		<h1>{$t("404.title")}</h1>
-		<h2>{$t("404.desc")} {window.location.href}</h2>
+		<h2>{$t("404.desc")} {window.location.pathname}</h2>
 		<hr />
 	</div>
 {:else}
