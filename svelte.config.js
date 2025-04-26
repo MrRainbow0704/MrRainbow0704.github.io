@@ -6,9 +6,10 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
+		appDir: "app",
 		alias: {
-			"$assets": "./src/assets",
-			"$translations": "./src/translations",
+			$assets: "./src/assets",
+			$translations: "./src/translations",
 		},
 		adapter: adapter({
 			fallback: "404.html",

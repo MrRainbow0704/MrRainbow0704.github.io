@@ -26,7 +26,7 @@
 
 <div id="dropdown" hidden>
 	<span>
-		{$t("language-selector.label")}
+		{$t("navbar.language-selector.label")}
 		<button onclick={closeDropdown}>&times;</button>
 	</span>
 	<div class="languages">
