@@ -5,37 +5,26 @@
 	import LanguageSelector from "$lib/LanguageSelector.svelte";
 
 	let { children } = $props();
-
-	let loaded = writable(false);
-
-	waitLocale().then(() => {
-		loaded.set(true);
-	});
 </script>
 
 <header>
 	<h1>Marco Simone</h1>
 </header>
-{#if $loaded}
-	<nav>
-		<ul>
-			<li>
-				<a href="/">{$t("navbar.link.home")}</a>
-			</li>
-			<li>
-				<a href="/contact-me">{$t("navbar.link.contacts")}</a>
-			</li>
-		</ul>
-		<span class="buttons">
-			<DarkModeToggler />
-			<LanguageSelector />
-		</span>
-	</nav>
-	{@render children()}
-{:else}
-	<nav></nav>
-	<p>Loading...</p>
-{/if}
+<nav>
+	<ul>
+		<li>
+			<a href="/">{$t("navbar.link.home")}</a>
+		</li>
+		<li>
+			<a href="/contact-me">{$t("navbar.link.contacts")}</a>
+		</li>
+	</ul>
+	<span class="buttons">
+		<DarkModeToggler />
+		<LanguageSelector />
+	</span>
+</nav>
+{@render children()}
 <footer>
 	<p>&copy; 2025 Marco Simone</p>
 </footer>
@@ -74,7 +63,7 @@
 
 	footer {
 		font-size: var(--text-xs);
-		min-height: calc(var(--space-xl)* 1.5);
+		min-height: calc(var(--space-xl) * 1.5);
 		text-align: center;
 	}
 </style>
