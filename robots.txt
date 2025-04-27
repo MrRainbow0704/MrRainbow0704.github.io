@@ -1,2 +1,4 @@
+Sitemap: mrrainbow0704.github.io/sitemap.xml
+
 User-agent: *
-Allow: /
+Disallow:
