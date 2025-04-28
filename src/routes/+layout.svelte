@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { writable } from "svelte/store";
-	import { t, waitLocale } from "svelte-i18n";
+	import { t } from "svelte-i18n";
 	import DarkModeToggler from "$lib/DarkModeToggler.svelte";
 	import LanguageSelector from "$lib/LanguageSelector.svelte";
 
