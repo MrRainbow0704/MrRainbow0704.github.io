@@ -52,3 +52,20 @@ a:hover {
 	color: var(--accent-secondary);
 }
 
+noscript {
+	z-index: 9999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100svw;
+	height: 100svh;
+	background-color: var(--background-primary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	> h1 {
+		font-size: var(--text-lg);
+		color: var(--text-primary);
+		text-align: center;
+	}
+}
