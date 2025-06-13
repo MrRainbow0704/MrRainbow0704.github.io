@@ -18,7 +18,7 @@
 			icon: github,
 		},
 		{
-			url: "https://www.instagram.com/marcosimone0704",
+			url: "https://www.instagram.com/marco.simone__",
 			alt: "instagram",
 			icon: instagram,
 		},
