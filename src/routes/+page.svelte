@@ -28,16 +28,6 @@
 			icon: reddit,
 		},
 		{
-			url: "https://tiktok.com/@marcosimone0704",
-			alt: "tiktok",
-			icon: tiktok,
-		},
-		{
-			url: "https://twitch.tv/MrRainbow0704",
-			alt: "twitch",
-			icon: twitch,
-		},
-		{
 			url: "https://x.com/marcosimone0704",
 			alt: "twitter",
 			icon: twitter,
